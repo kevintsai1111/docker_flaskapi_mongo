@@ -20,7 +20,7 @@ def log():
     name = data["name"]
     gender = data["gender"]
     collections_name = "test2"
-    client = pymongo.MongoClient("mongodb+srv://kevin:FidQm1vLwEa4iZOe@cluster0.srhl7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://kevin:<password>@cluster0.srhl7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     db = client.test
     mycol = db[collections_name]
     mycol.insert_one(data)
